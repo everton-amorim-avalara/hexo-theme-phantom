@@ -8,8 +8,8 @@ menu:
   Monitoramento: /monitor.html
 
 # Logo Image Source
-logo_src: /dev/images/favicon.svg
-favicon_src: /dev/images/favicon.svg
+logo_src: images/favicon.svg
+favicon_src: images/favicon.svg
 
 # Theme Main Subtitle
 subtitle_main: Portal dos desenvolvedores da Avalara Brazil
