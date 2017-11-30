@@ -1,7 +1,7 @@
 # Header
 menu:
   Home: /
-  Nota Fiscal: /invoices.html
+  Api: /invoices.html
   Determinação de Impostos: /calculation.html
   Obrigações: /compliance.html
   Documentos: /documents.html
