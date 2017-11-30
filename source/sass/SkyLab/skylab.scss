@@ -1,0 +1,3706 @@
+//colors
+$color_pale_sky_approx: #72767e;
+$color_aqua_squeeze_approx: #e4eff6;
+$color_mountain_mist_approx: #919195;
+$color_whisper_approx: #f5f6fa;
+$alto: #dbdbdb;
+$white: #fff;
+$color_forest_green_approx: #22ae36;
+$color_iron_approx: #d7d7d7;
+$color_mercury_approx: #e7e7e7;
+$color_celeste_approx: #ccc;
+$color_guardsman_red_approx: #c70000;
+
+$blaze_orange: #f60;
+$color_flush_orange_approx: #ff8000;
+
+$color_alto_approx: #dbdbdc;
+$color_mustard_approx: #fedb4f;
+$color_thunderbird_approx: #c82b1c;
+$color_killarney_approx: #347b3d;
+$color_storm_dust_approx: #5f6062;
+$color_wild_sand_approx: #f2f3f7;
+$color_pelorous_approx: #419fc2;
+$color_gray_nurse_approx: #eaeaeb;
+$color_gallery_approx: #eaeaee;
+$color_bon_jour_approx: #e0e0e0;
+$color_mine_shaft_approx: #333;
+$color_pink_swan_approx: #bbb;
+$black_50: rgba(0, 0, 0, .5);
+
+$color_deep_cerulean_approx: #027fad;
+$color_picton_blue_approx: #3af;
+$color_curious_blue_approx: #178fe5;
+$color_endeavour_approx: #005da9;
+$color_lochmara_approx: #0076c9;
+$color_cerulean_approx: #059bd2;
+$color_dodger_blue_approx: #21b7f9;
+
+$color_link_water_approx: #d5e9f7;
+$color_lima_approx: #6cb31d;
+$color_bombay_approx: #b5b8bc;
+$gallery: #efefef;
+
+//fonts
+$font_0: sans-serif;
+$font_1: Source Sans Pro;
+$font_2: Helvetica Neue;
+$font_3: Helvetica;
+$font_4: Arial;
+
+$font-weight: 400;
+$font-size: 11.9px;
+$font-letter-spacing: 0.980em;
+
+//data-uris
+$data_uri_0: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle/%3E%3Cpath fill='%23027fad' d='M295.2 504.4l271-337.4 138.6 111.2L520.6 514l184.2 235L565 860.6 295.2 522.8v-18.4z'/%3E%3C/svg%3E";
+$data_uri_1: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle/%3E%3Cpath fill='%23fff' d='M295.2 504.4l271-337.4 138.6 111.2L520.6 514l184.2 235L565 860.6 295.2 522.8v-18.4z'/%3E%3C/svg%3E";
+$data_uri_2: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle/%3E%3Cpath fill='%23027fad' d='M728.8 519.6L457.8 857 319.2 745.8 503.4 510 319.2 275 459 163.4l269.8 337.8v18.4z'/%3E%3C/svg%3E";
+$data_uri_3: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024' viewBox='0 0 1024 1024'%3E%3Ctitle/%3E%3Cpath fill='%23fff' d='M728.8 519.6L457.8 857 319.2 745.8 503.4 510 319.2 275 459 163.4l269.8 337.8v18.4z'/%3E%3C/svg%3E";
+$data_uri_4: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==";
+$data_uri_5: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=";
+
+//urls
+$url_0: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,700,700i';
+$url_1: url(/static/media/hands_medium.d07543f0.jpg);
+
+//Button
+$button_padding_text: 7px;
+
+//@extend-elements
+//original selectors
+//.sk-date-label, .sk-label, .sk-label-table
+%extend_1 {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color_pale_sky_approx;
+  text-transform: uppercase;
+  letter-spacing: $font-letter-spacing;
+  display: inline-block;
+  padding: 0 0 4px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-progressbar-container, .sk-progressbar-content
+%extend_2 {
+  width: 40px;
+  height: 40px;
+  //position: absolute;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-progressbar-NofM, .sk-progressbar-NofM_large
+%extend_3 {
+  font-size: 10.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+//original selectors
+//.sk-tooltip:after, .sk-tooltip:before
+%extend_4 {
+  content: "";
+  position: absolute;
+  left: 50%;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translateX(-50%);
+}
+
+//original selectors
+//.sk-date-picker, .sk-field
+%extend_5 {
+  font-size: 14px;
+  margin: 0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-date-picker input, .sk-field input
+%extend_6 {
+  font-size: 14px;
+  line-height: 19.992px;
+  border: 1px solid $color_celeste_approx;
+  background-color: $white;
+  color: $color_pale_sky_approx;
+}
+
+//original selectors
+//.sk-date-picker input::-webkit-input-placeholder, .sk-field input::-webkit-input-placeholder
+%extend_7 {
+  font-style: italic;
+  color: $color_pale_sky_approx;
+  opacity: .6;
+}
+
+//original selectors
+//.sk-date-picker input:-ms-input-placeholder, .sk-field input:-ms-input-placeholder
+%extend_8 {
+  font-style: italic;
+  color: $color_pale_sky_approx;
+  opacity: .6;
+}
+
+//original selectors
+//.sk-date-picker input::placeholder, .sk-field input::placeholder
+%extend_9 {
+  font-style: italic;
+  color: $color_pale_sky_approx;
+  opacity: .6;
+}
+
+//original selectors
+//.sk-step-header, .sk-step-header-active, .sk-step-header-disabled
+%extend_10 {
+  font-size: 16.1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  color: $color_deep_cerulean_approx;
+  letter-spacing: .98px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-step-header-active .sk-step-header-icon, .sk-step-header-disabled .sk-step-header-icon, .sk-step-header .sk-step-header-icon
+%extend_11 {
+  width: 20px;
+  height: 20px;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  background-color: $color_forest_green_approx;
+  display: inline-block;
+}
+
+//original selectors
+//.sk-step-header-active svg, .sk-step-header-disabled svg, .sk-step-header svg
+%extend_12 {
+  position: relative;
+  height: 15px;
+  right: -2.5px;
+  top: 2px;
+  fill: $white;
+}
+
+//original selectors
+//.sk-borderButton:disabled svg, .sk-disabled .sk-borderButton svg
+%extend_13 {
+  background-color: $color_iron_approx;
+  fill: $white;
+  border-color: $color_iron_approx;
+}
+
+//original selectors
+//.sk-manageButton img, .sk-manageButton svg
+%extend_14 {
+  background-color: $color_deep_cerulean_approx;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+//original selectors
+//.sk-bodycopy, .sk-bodycopy-table, .sk-description, .sk-radioButton, .sk-select-option
+%extend_15 {
+  font-weight: 400;
+  font-size: 14px;
+  color: $color_storm_dust_approx;
+  line-height: 19.992px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-processStatement, .sk-processStatus
+%extend_16 {
+  font-weight: 400;
+  color: $color_storm_dust_approx;
+  font-style: italic;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-checkbox-fake-disabled, .sk-checkbox-fake-enabled
+%extend_17 {
+  margin-left: 0;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid $color_celeste_approx;
+  display: inline-block;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+//original selectors
+//.sk-calendar .pika-lendar .pika-title .pika-next, .sk-calendar .pika-lendar .pika-title .pika-prev
+%extend_18 {
+  color: $white;
+  width: 1.4rem;
+  height: 2rem;
+  opacity: 1;
+  font-size: 0;
+}
+
+
+@import url($url_0);
+
+.skylab-body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: $font_0;
+  height: 100%;
+}
+
+body {
+  @extend .skylab-body;
+}
+
+.sk-bodycopy {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_15;
+}
+
+.sk-bodycopy-table {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_15;
+  color: $color_pale_sky_approx;
+}
+
+.sk-checkbox {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  padding: 0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  input[type=checkbox] {
+    display: none;
+  }
+}
+
+.sk-confirmation {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 11.9px;
+  color: $color_forest_green_approx;
+  font-weight: 400;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-date-label {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_1;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 11.9px;
+  padding: 0;
+}
+
+.sk-date-picker {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_5;
+  position: relative;
+
+  input {
+    font-family: $font_1, $font_0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    @extend %extend_6;
+
+    &:focus {
+      outline: none;
+      border-color: $color_deep_cerulean_approx;
+    }
+
+    &:disabled {
+      color: $color_celeste_approx;
+      background-color: $color_whisper_approx;
+    }
+
+    &:invalid {
+      border-color: $color_guardsman_red_approx;
+    }
+
+    &:-ms-input-placeholder {
+      @extend %extend_8;
+    }
+  }
+
+  input::-webkit-input-placeholder {
+    @extend %extend_7;
+  }
+
+  input::placeholder {
+    @extend %extend_9;
+  }
+
+  input[type=email] {
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=password] {
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=text] {
+    padding: 4px 0 4px 10px;
+    padding-right: .75rem;
+    width: 9.5rem;
+  }
+
+  input[type=number] {
+    padding: 4px 10px 4px 0;
+    text-align: right;
+
+    &:-ms-input-placeholder {
+      text-align: left;
+      padding: 4px 0 4px 10px;
+    }
+  }
+
+  input[type=number]::-webkit-input-placeholder {
+    text-align: left;
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=number]::placeholder {
+    text-align: left;
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  .sk-calendar-icon {
+    float: right;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+  }
+
+  span > .clear-date {
+    display: none;
+  }
+
+  &:hover span > .clear-date {
+    display: flex;
+    position: absolute;
+    right: 1.56rem;
+    top: .56rem;
+    cursor: pointer;
+  }
+}
+
+.sk-description {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_15;
+  color: $color_mountain_mist_approx;
+  font-weight: 300;
+}
+
+.sk-divider {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 300;
+  color: $color_celeste_approx;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-dragAndDrop {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 56px;
+  color: $color_mercury_approx;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-field {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_5;
+
+  input {
+    font-family: $font_1, $font_0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    @extend %extend_6;
+
+    &:focus {
+      outline: none;
+      border-color: $color_deep_cerulean_approx;
+    }
+
+    &:disabled {
+      color: $color_celeste_approx;
+      background-color: $color_whisper_approx;
+    }
+
+    &:invalid {
+      border-color: $color_guardsman_red_approx;
+    }
+
+    &:-ms-input-placeholder {
+      @extend %extend_8;
+    }
+  }
+
+  &.content-size {
+    position: relative;
+    width: fit-content;
+  }
+
+  input::-webkit-input-placeholder {
+    @extend %extend_7;
+  }
+
+  input::placeholder {
+    @extend %extend_9;
+  }
+
+  input[type=email] {
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=password] {
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=text] {
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=number] {
+    padding: 4px 10px 4px 0;
+    text-align: right;
+
+    &:-ms-input-placeholder {
+      text-align: left;
+      padding: 4px 0 4px 10px;
+    }
+  }
+
+  input[type=number]::-webkit-input-placeholder {
+    text-align: left;
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=number]::placeholder {
+    text-align: left;
+    padding: 4px 0 4px 10px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.sk-fieldError {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 400;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 14px;
+  color: $color_guardsman_red_approx;
+  display: inline-block;
+}
+
+.sk-font {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-label {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_1;
+}
+
+.sk-label-table {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_1;
+  color: $color_mountain_mist_approx;
+}
+
+.sk-processStatement {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 17.99px;
+  @extend %extend_16;
+}
+
+.sk-processStatus {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_16;
+  font-size: 14px;
+}
+
+.sk-progressbar-label {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 11.9px;
+  color: $color_forest_green_approx !important;
+  position: absolute !important;
+  left: 54% !important;
+  top: 50% !important;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.sk-radioButton {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_15;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  input[type=radio] {
+    display: none;
+  }
+
+  svg {
+    line-height: 19.992px;
+    margin-right: 10px;
+  }
+}
+
+.sk-sectionName {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  //box-sizing: border-box;
+  font-size: 23.8px;
+  color: $color_mountain_mist_approx;
+  font-weight: 300;
+  //Instead of the line below you could use @include box-sizing($bs)
+  //box-sizing: border-box;
+}
+
+.sk-sectionSummary {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 14px;
+  color: $color_pale_sky_approx;
+  font-style: italic;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-select-option {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_15;
+
+  &:hover {
+    color: $color_cerulean_approx;
+  }
+}
+
+.sk-step-header {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_10;
+
+  .sk-step-header-icon {
+    @extend %extend_11;
+  }
+
+  svg {
+    @extend %extend_12;
+  }
+}
+
+.sk-step-header-active {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_10;
+  color: $blaze_orange;
+  letter-spacing: .5915px;
+  font-weight: 400;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  .sk-step-header-icon {
+    @extend %extend_11;
+    background-color: $blaze_orange;
+  }
+
+  svg {
+    @extend %extend_12;
+  }
+}
+
+.sk-step-header-disabled {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  @extend %extend_10;
+  color: $color_celeste_approx;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  .sk-step-header-icon {
+    @extend %extend_11;
+    background-color: $color_iron_approx;
+    width: 20px;
+    height: 20px;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  svg {
+    @extend %extend_12;
+  }
+}
+
+.sk-subhead {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 17.99px;
+  color: $color_storm_dust_approx;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-subsection {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 300;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 17.99px;
+  color: $blaze_orange;
+}
+
+.sk-text-area {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-size: 14px;
+  margin: 0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  textarea {
+    font-family: $font_1, $font_0;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 19.992px;
+    border: 1px solid $color_celeste_approx;
+    background-color: $white;
+    color: $color_pale_sky_approx;
+
+    &:focus {
+      outline: none;
+      border-color: $color_deep_cerulean_approx;
+    }
+
+    &:disabled {
+      color: $color_celeste_approx;
+      background-color: $color_whisper_approx;
+    }
+
+    &:invalid {
+      border-color: $color_guardsman_red_approx;
+    }
+
+    &:-ms-input-placeholder {
+      font-style: italic;
+      color: $color_pale_sky_approx;
+      opacity: .6;
+    }
+  }
+
+  textarea::-webkit-input-placeholder {
+    font-style: italic;
+    color: $color_pale_sky_approx;
+    opacity: .6;
+  }
+
+  textarea::placeholder {
+    font-style: italic;
+    color: $color_pale_sky_approx;
+    opacity: .6;
+  }
+}
+
+.sk-workspaceTitle {
+  font-family: $font_1, $font_0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 26.04px;
+  color: $blaze_orange;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-label-inline {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+
+  div {
+    margin-right: 20px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+
+  &.sk-table-radio {
+    border-collapse: collapse;
+    width: 100%;
+
+    .selected-row {
+      background-color: $color_aqua_squeeze_approx !important;
+    }
+
+    .sk-radioButton {
+      color: $color_mountain_mist_approx;
+      padding-left: 10px;
+    }
+
+    td {
+      padding: 5px 5px 5px 0;
+    }
+
+    tbody tr:hover {
+      background-color: $color_whisper_approx;
+    }
+
+    tr th {
+      &:last-child {
+        padding-left: 10px !important;
+      }
+
+      &:first-child {
+        padding-left: 37px !important;
+      }
+    }
+  }
+
+  &.sk-table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td {
+      padding: 5px 5px 5px 0;
+    }
+
+    tr {
+      th {
+        &:last-child {
+          padding-left: 10px !important;
+        }
+
+        &:first-child {
+          padding-left: 30px !important;
+        }
+      }
+
+      td:first-child {
+        padding-left: 30px !important;
+      }
+    }
+
+    tbody tr:hover {
+      background-color: $color_whisper_approx;
+    }
+  }
+
+  .table-bottom-border {
+    border-bottom: 1px solid $alto !important;
+  }
+
+  .table-header {
+    border-top: 1px solid $alto;
+    text-align: left;
+
+    th {
+      padding: 5px 0;
+    }
+  }
+
+  thead tr {
+    text-align: left;
+  }
+
+  th span:first-child {
+    margin-right: 5px;
+  }
+}
+
+.sk-progressbar-container {
+  @extend %extend_2;
+}
+
+.sk-progressbar-content {
+  @extend %extend_2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sk-progressbar-circle-container {
+  width: 40px;
+  height: 40px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-progressbar-circle {
+  width: 40px;
+  height: 40px;
+  //position: absolute;
+}
+
+.sk-progressbar-circle-background {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  background-color: $white;
+  //position: absolute;
+}
+
+.sk-progressbar-NofM {
+  @extend %extend_3;
+
+  &.green {
+    color: $color_forest_green_approx;
+  }
+
+  &.grey {
+    color: $color_iron_approx;
+  }
+}
+
+.sk-progressbar-NofM_large {
+  @extend %extend_3;
+  letter-spacing: -1px;
+}
+
+.sk-progressbar-checkmark {
+  width: 20px;
+  height: 20px;
+}
+
+.sk-progressbar-checkmark-green {
+  width: 20px;
+  height: 20px;
+  fill: $color_forest_green_approx;
+}
+
+.sk-progressbar-checkmark-grey {
+  width: 20px;
+  height: 20px;
+  fill: $color_iron_approx;
+}
+
+.sk-progressbar-percent {
+  font-size: 8.925px;
+}
+
+.sk-tooltip-container {
+  position: absolute;
+}
+
+.sk-tooltip {
+  display: flex;
+  position: relative;
+  border: 2px solid $color_mercury_approx;
+  padding: 25px;
+  background-color: $white;
+  z-index: 9999;
+
+  &:before {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $color_mercury_approx;
+    bottom: -15px;
+    @extend %extend_4;
+  }
+
+  &:after {
+    @extend %extend_4;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-top: 14px solid $white;
+    bottom: -12px;
+  }
+}
+
+.sk-focus {
+  .sk-primaryButton {
+    outline: 0;
+  }
+
+  .sk-primaryInvertedButton {
+    outline: 0;
+  }
+
+  .sk-standardButton {
+    outline: 0;
+  }
+
+  .sk-standardInvertedButton {
+    outline: 0;
+  }
+
+  .sk-textButton {
+    outline: 0;
+  }
+
+  .sk-senseiButton {
+    outline: 0;
+  }
+
+  .sk-senseiInvertedButton {
+    outline: 0;
+  }
+
+  .sk-borderButton {
+    outline: 0;
+  }
+
+  .sk-manageButton {
+    outline: 0;
+  }
+
+  .sk_menuItem {
+    outline: 0;
+  }
+
+  .sk-activeMenuItem {
+    outline: 0;
+  }
+
+  .sk-date-picker input {
+    outline: none;
+    border-color: $color_deep_cerulean_approx;
+  }
+
+  .sk-field input {
+    outline: none;
+    border-color: $color_deep_cerulean_approx;
+  }
+
+  .sk-text-area textarea {
+    outline: none;
+    border-color: $color_deep_cerulean_approx;
+  }
+}
+
+.sk-disabled {
+  .sk-primaryButton {
+    color: $white;
+    background-color: $color_iron_approx;
+  }
+
+  .sk-primaryInvertedButton {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+
+  .sk-standardButton {
+    color: $white;
+    background-color: $color_iron_approx;
+  }
+
+  .sk-standardInvertedButton {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+
+  .sk-textButton {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+
+  .sk-senseiButton {
+    color: $white;
+    background-color: $color_iron_approx;
+  }
+
+  .sk-senseiInvertedButton {
+    border-color: $color_iron_approx;
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $color_iron_approx;
+    }
+  }
+
+  .sk-borderButton {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+
+    svg {
+      @extend %extend_13;
+    }
+  }
+
+  .sk-manageButton {
+    color: $color_celeste_approx;
+
+    svg {
+      background-color: $color_iron_approx;
+    }
+  }
+
+  .sk_menuItem {
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $color_iron_approx;
+    }
+  }
+
+  .sk-activeMenuItem {
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $color_iron_approx;
+    }
+  }
+
+  .sk-date-picker input {
+    color: $color_celeste_approx;
+    background-color: $color_whisper_approx;
+  }
+
+  .sk-field input {
+    color: $color_celeste_approx;
+    background-color: $color_whisper_approx;
+  }
+
+  .sk-text-area textarea {
+    color: $color_celeste_approx;
+    background-color: $color_whisper_approx;
+  }
+}
+
+.sk-invalid {
+  .sk-date-picker input {
+    border-color: $color_guardsman_red_approx;
+  }
+
+  .sk-field input {
+    border-color: $color_guardsman_red_approx;
+  }
+
+  .sk-text-area textarea {
+    border-color: $color_guardsman_red_approx;
+  }
+}
+
+.sk-primaryButton {
+  background-color: $color_deep_cerulean_approx;
+  padding: 0 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $white;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  position: relative;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $color_iron_approx;
+  }
+
+  .sk-loading-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-50%);
+  }
+
+  .hide-text {
+    visibility: hidden;
+  }
+}
+
+.sk-hover {
+  .sk-primaryButton {
+    background-color: $color_cerulean_approx;
+  }
+
+  .sk-primaryInvertedButton {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+  }
+
+  .sk-standardButton {
+    background-color: $color_cerulean_approx;
+  }
+
+  .sk-standardInvertedButton {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+  }
+
+  .sk-textButton {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+  }
+
+  .sk-senseiButton {
+    background-color: $color_cerulean_approx;
+  }
+
+  .sk-senseiInvertedButton {
+    border-color: $color_cerulean_approx;
+    color: $color_cerulean_approx;
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+
+  .sk-borderButton {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+  }
+
+  .sk-manageButton {
+    color: $color_cerulean_approx;
+
+    svg {
+      background-color: $color_cerulean_approx;
+    }
+  }
+
+  .sk_menuItem {
+    color: $color_cerulean_approx;
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+
+  .sk-activeMenuItem {
+    color: $color_cerulean_approx;
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+}
+
+.sk-active {
+  .sk-primaryButton {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  .sk-primaryInvertedButton {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  .sk-standardButton {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  .sk-standardInvertedButton {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  .sk-textButton {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  .sk-senseiButton {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  .sk-senseiInvertedButton {
+    border-color: $color_dodger_blue_approx;
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+
+  .sk-borderButton {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  .sk-manageButton {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      background-color: $color_dodger_blue_approx;
+    }
+  }
+
+  .sk_menuItem {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+
+  .sk-activeMenuItem {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+}
+
+.sk-primaryInvertedButton {
+  background-color: transparent;
+  padding: 0 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  border: 2px solid $color_deep_cerulean_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+}
+
+.sk-standardButton {
+  background-color: $color_deep_cerulean_approx;
+  padding: 0 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $white;
+  font-size: 14px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  width: max-content;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $color_iron_approx;
+  }
+}
+
+.sk-waiting {
+  background-color: $color_celeste_approx;
+}
+
+.sk-transparent {
+  visibility: hidden;
+}
+
+.sk-loading-gif {
+  width: 16px;
+  padding-left: 1px;
+}
+
+.sk-standardInvertedButton {
+  background-color: transparent;
+  padding: 0 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  border: 2px solid $color_deep_cerulean_approx;
+  font-size: 14px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+}
+
+.sk-textButton {
+  background-color: transparent;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  border: 2px solid $color_deep_cerulean_approx;
+  font-size: 14px;
+  border: none;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+  }
+}
+
+.sk-largeIconButton {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color_deep_cerulean_approx;
+  width: 89px;
+  height: 114px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.disabled {
+    cursor: default;
+    border: 1px solid $color_iron_approx;
+  }
+
+  .sk-thumbnail {
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 30px);
+  }
+
+  > span > img {
+    width: 90px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.sk-senseiButton {
+  background-color: $color_deep_cerulean_approx;
+  padding-left: 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $white;
+  padding: 0 14px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  line-height: 16px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    background-color: $color_dodger_blue_approx;
+  }
+
+  &:disabled {
+    color: $white;
+    background-color: $color_iron_approx;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  svg {
+    padding: 0;
+    margin: 0;
+    fill: $white;
+  }
+
+  span {
+    padding-left: 10px;
+  }
+}
+
+sk-disabled {
+  .sk-senseiButton svg {
+    fill: $white;
+  }
+
+  .sk-senseiInvertedButton svg {
+    fill: $white;
+  }
+
+  .sk-borderButton svg {
+    fill: $white;
+  }
+
+  .sk-manageButton svg {
+    fill: $white;
+  }
+
+  .sk_menuItem svg {
+    fill: $white;
+  }
+
+  .sk-activeMenuItem svg {
+    fill: $white;
+  }
+}
+
+.sk-senseiInvertedButton {
+  background-color: transparent;
+  padding-left: 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  padding: 0 14px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  line-height: 16px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    border-color: $color_cerulean_approx;
+    color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+
+  &:active {
+    border-color: $color_dodger_blue_approx;
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+
+  &:disabled {
+    border-color: $color_iron_approx;
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $white;
+      fill: $color_iron_approx;
+    }
+  }
+
+  svg {
+    padding: 0;
+    margin: 0;
+    fill: $color_deep_cerulean_approx;
+  }
+
+  span {
+    padding-left: 10px;
+  }
+
+  &.border {
+    border: 2px solid $color_deep_cerulean_approx;
+    padding-left: 6px;
+    padding-right: 12px;
+  }
+}
+
+.sk-borderButton {
+  font-size: 14px;
+  background-color: transparent;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid $color_deep_cerulean_approx;
+  padding: 0 7px 0 0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  svg {
+    padding: 0;
+    margin: 0;
+    fill: $white;
+    width: 26px;
+    height: 26px;
+    background-color: $color_deep_cerulean_approx;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+    border-color: $color_iron_approx;
+
+    svg {
+      fill: $white;
+      @extend %extend_13;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+    border-color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+    border-color: $color_dodger_blue_approx;
+  }
+}
+
+.sk-manageButton {
+  font-size: 14px;
+  background-color: transparent;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  padding: 0;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  svg {
+    //padding: 0;
+    margin: 0;
+    fill: $white;
+    width: 26px;
+    height: 26px;
+    @extend %extend_14;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $white;
+      background-color: $color_iron_approx;
+      background-color: $color_iron_approx;
+      fill: $white;
+    }
+
+    img {
+      background-color: $color_iron_approx;
+      fill: $white;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+
+    svg {
+      background-color: $color_cerulean_approx;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      background-color: $color_dodger_blue_approx;
+    }
+  }
+
+  img {
+    @extend %extend_14;
+  }
+
+  .sk-disabled {
+    img {
+      background-color: $color_iron_approx;
+      fill: $white;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+
+    svg {
+      background-color: $color_iron_approx;
+      fill: $white;
+    }
+  }
+
+  span {
+    padding: $button_padding_text;
+  }
+}
+
+.sk-toggleContainer {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+
+  input {
+    display: none;
+  }
+}
+
+.sk-toggleSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color_iron_approx;
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: .4s;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+
+  &:before {
+    position: absolute;
+    content: "";
+    text-align: center;
+    color: $white;
+    padding-top: 4.5px;
+    height: 20.5px;
+    width: 25px;
+    left: 3px;
+    bottom: 3px;
+    background-color: $white;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: .4s;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 50%;
+    border: 0 solid $white;
+  }
+
+  &.sk-toggle-on {
+    .sk-toggle-label {
+      text-aligh: left;
+    }
+
+    &.sk-enabled {
+      background-color: $color_forest_green_approx;
+    }
+  }
+
+  &.sk-toggle-off {
+    .sk-toggle-label {
+      text-align: right;
+    }
+
+    &.sk-enabled {
+      background-color: $color_pale_sky_approx;
+    }
+  }
+}
+
+.sk-toggle-label {
+  color: $white;
+  font-size: 11.9px;
+  font-weight: 400;
+  margin-left: 8.4px;
+  margin-right: 5.6px;
+  width: 100%;
+}
+
+.sk_menuItem {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 0 0 0 14px;
+  padding-right: 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  border: none;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  display: inline-flex;
+
+  svg {
+    padding: 0;
+    margin: 0;
+    fill: $color_deep_cerulean_approx;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $white;
+      fill: $color_iron_approx;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+
+  span {
+    padding-top: 4px;
+    letter-spacing: .98px;
+  }
+}
+
+.sk-select {
+  position: relative;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  border: 1px solid $color_celeste_approx;
+  background-color: $white;
+  width: 150px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 8px 4px 10px;
+  }
+
+  ul {
+    position: absolute;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    background-color: $white;
+    width: 150px;
+    max-height: 225px;
+    border: 1px solid $color_celeste_approx;
+    border-top: none;
+    left: -1px;
+    z-index: 9999;
+
+    li {
+      line-height: 1.75;
+
+      &:hover > span.sk-select-option {
+        color: $color_cerulean_approx;
+      }
+    }
+  }
+}
+
+.sk-activeMenuItem {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 0 14px;
+  border: 0;
+  font-family: $font_1, $font_0;
+  font-weight: 400;
+  height: 30px;
+  color: $color_deep_cerulean_approx;
+  border: none;
+  color: $blaze_orange;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  display: inline-flex;
+
+  svg {
+    padding: 0;
+    margin: 0;
+    fill: $blaze_orange;
+  }
+
+  &:disabled {
+    color: $color_celeste_approx;
+
+    svg {
+      fill: $white;
+      fill: $color_iron_approx;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color_cerulean_approx;
+
+    &:enabled {
+      cursor: pointer;
+    }
+
+    svg {
+      fill: $color_cerulean_approx;
+    }
+  }
+
+  &:active {
+    color: $color_dodger_blue_approx;
+
+    svg {
+      fill: $color_dodger_blue_approx;
+    }
+  }
+
+  span {
+    padding-top: 4px;
+    letter-spacing: .588px;
+  }
+}
+
+.sk-alert {
+  position: fixed;
+  top: 10px;
+  z-index: 2147483647;
+  display: inline-block;
+  border: 2px solid $color_alto_approx;
+  max-width: 600px;
+
+  &.centered {
+    left: 50%;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: translateX(-50%);
+  }
+
+  &.right-align {
+    right: 0;
+  }
+
+  &.warning-alert {
+    background-color: $color_mustard_approx;
+  }
+
+  &.error-alert {
+    background-color: $color_thunderbird_approx;
+  }
+
+  &.success-alert {
+    background-color: $color_killarney_approx;
+
+    .alert-line {
+      padding: 0 15px 20px;
+    }
+  }
+
+  &.notification-alert {
+    background-color: $color_cerulean_approx;
+
+    .alert-line {
+      padding: 0 15px 20px;
+    }
+  }
+
+  .alert-line {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding: 0 0 20px 15px;
+
+    .alert-message {
+      margin-top: 5px;
+    }
+  }
+
+  .sk-sectionName {
+    color: $white;
+  }
+
+  .sk-subhead {
+    color: $white;
+  }
+
+  .close-icon {
+    padding: 10px 10px 0;
+  }
+}
+
+.sk-checkbox-fake-disabled {
+  line-height: 19.992px;
+  @extend %extend_17;
+  background-color: $color_whisper_approx;
+}
+
+.sk-checkbox-fake-enabled {
+  line-height: 19.992px;
+  @extend %extend_17;
+  background-color: $white;
+}
+
+.sk-checkbox-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sk-radiobox-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.sk-menu-item-label {
+  margin-left: 10px;
+}
+
+.sk-label-spacing {
+  top: -4px;
+  position: relative;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+
+.sk-divider-small {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sk-divider-large {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  bottom: 3px;
+}
+
+.sk-expander {
+  &.open > svg {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(180deg);
+    cursor: pointer;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: transform .25s ease-in-out;
+  }
+
+  &.closed > svg {
+    cursor: pointer;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: transform .25s ease-in-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+}
+
+.sk-expandable-tile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sk-expandable-tile-header-name {
+  padding-left: 20px;
+  display: flex;
+}
+
+.sk-expandable-tile-header-expander {
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sk-expandable-tile-closed {
+  display: none;
+}
+
+.sk-largeLabel {
+  color: $color_pale_sky_approx;
+}
+
+select {
+  height: 29px;
+  border: 1px solid $color_celeste_approx;
+  background-color: $white;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+}
+
+.td-radio-row {
+  cursor: default;
+}
+
+.no-underline {
+  text-decoration: none;
+  text-decoration: none !important;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-content {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: none !important;
+}
+
+.App-bottom-margin {
+  margin-bottom: 90px !important;
+}
+
+@media(min-width: 768px) {
+  .App-content {
+    width: 750px !important;
+  }
+}
+
+@media(min-width: 992px) {
+  .App-content {
+    width: 970px !important;
+  }
+}
+
+@media(min-width: 1200px) {
+  .App-content {
+    width: 1170px !important;
+  }
+}
+
+
+// Center
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+// End Center
+
+
+
+.modal-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.modal-footer {
+  //text-align: left;
+}
+
+.modal-header .close {
+  padding: 15px;
+  margin: -15px -15px -15px auto;
+}
+
+button.close {
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.close {
+  color: #027fad;
+  opacity: 1;
+}
+
+.close :hover {
+  opacity: 1.1;
+}
+
+.modal-content {
+  border: 1px #e7e7e7;
+  //border-radius: 0px;
+}
+
+.modal-backdrop.in {
+  opacity: 0.3;
+}
+
+.modal-content {
+  //padding: 0 0 15px 15px;
+}
+
+
+
+
+
+.App-opaque {
+  opacity: .2;
+}
+
+.background-image {
+  background-image: $url_1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.header-logo {
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.header {
+  //height: 40px;
+  padding: 0;
+  //color: $white;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: none !important;
+  border-bottom: 1px solid $color_iron_approx !important;
+  background-color: $color_whisper_approx;
+
+  img {
+    max-height: 50px;
+    float: left;
+  }
+}
+
+.header-dropdown-action {
+  color: $color_deep_cerulean_approx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $color_whisper_approx !important;
+  }
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header-user-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: $color_pelorous_approx;
+  font-family: $font_1, $font_0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.header-link-item {
+  display: flex;
+  align-items: center;
+}
+
+.drop-icon {
+  display: inherit;
+  margin-left: 10px;
+}
+
+.header-user-link-spacing {
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+.header-reports-spacing {
+  margin-right: 65px;
+}
+
+.header-icon-spacing {
+  margin-top: 4px;
+}
+
+.download-report-menu-item {
+  svg {
+    margin-right: 10px;
+  }
+
+  span {
+    font-size: smaller;
+    position: relative;
+    top: -3.5px;
+  }
+}
+
+.form-tile {
+  border: 1px;
+  border-color: $color_alto_approx;
+  border-style: solid;
+  margin: 5px 0 8px;
+}
+
+.tile-header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color_whisper_approx;
+  padding: 20px 30px;
+  cursor: pointer !important;
+  display: flex;
+}
+
+.tile-header-name {
+  display: flex;
+  padding-left: 20px;
+}
+
+.tile-header-expander {
+  display: flex;
+}
+
+.tile-header-group {
+  display: flex;
+  align-content: center;
+}
+
+.tile-header-item {
+  padding-left: 20px;
+}
+
+.tile-header-column {
+  display: flex;
+  flex-direction: column;
+  width: 65px;
+}
+
+.expander {
+  &.open > svg {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(180deg);
+    cursor: pointer;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: transform .25s ease-in-out;
+  }
+
+  &.closed > svg {
+    cursor: pointer;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: transform .25s ease-in-out;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.pagelink {
+  font-size: 14px;
+  text-decoration: none;
+  color: $color_deep_cerulean_approx;
+  font-family: $font_1, $font_0;
+  letter-spacing: 1px;
+}
+
+.pagelink-active {
+  color: $blaze_orange;
+  font-weight: 700;
+}
+
+.pagelink-disabled {
+  color: $color_celeste_approx;
+}
+
+.pagelink-uppercase {
+  text-transform: uppercase;
+}
+
+.application-tile {
+  margin: 10px 0;
+
+  .sk-tooltip {
+    top: -65px;
+  }
+
+  .sk-tooltip-container {
+    position: absolute;
+    left: 32%;
+  }
+}
+
+.application-tile-content {
+  display: flex;
+  padding: 15px 0 15px 30px;
+  align-items: center;
+  background-color: $color_whisper_approx;
+  border: 2px solid $color_gray_nurse_approx;
+
+  > .app-tile-column:first-child {
+    width: 33.33%;
+    word-wrap: break-word;
+  }
+}
+
+.has-messages {
+  border-bottom: none !important;
+}
+
+.app-tile-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 50px;
+  text-transform: capitalize;
+}
+
+.app-tile-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and(max-width: 1200px) {
+  .application-tile .sk-tooltip-container {
+    left: calc(32% +15px);
+  }
+}
+
+.progress-alert {
+  display: flex;
+  margin: 10px 0 0;
+  padding: 20px;
+  background-color: $color_whisper_approx;
+  border: 1.5px solid $color_gray_nurse_approx;
+}
+
+.progress-alert-container {
+  width: 245px;
+
+  &:first-child {
+    .progress-alert {
+      margin-left: 0;
+    }
+
+    .align-message {
+      margin-left: 0;
+    }
+  }
+}
+
+.progress-section {
+  width: 50%;
+  flex: 1;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+
+.progress-type {
+  margin-left: 5px;
+  width: 75%;
+}
+
+.search-filter-container {
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color_whisper_approx;
+  border: 1px solid $color_mercury_approx;
+  border-bottom: 1px solid $color_celeste_approx;
+  margin-bottom: 10px;
+  width: 100%;
+  display: inline-flex;
+}
+
+.search-fields {
+  display: inline-flex;
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+
+  &:first-child {
+    padding-left: 20px;
+  }
+}
+
+.buttons-div {
+  flex-direction: row;
+  padding-right: 20px;
+  margin-top: 18px;
+
+  > span:first-child {
+    margin-right: 10px;
+  }
+}
+
+.clear-button {
+  color: $color_gallery_approx;
+}
+
+.needs-action {
+  border: 1px solid $color_bon_jour_approx;
+  border-top: none;
+}
+
+.action-message {
+  padding: 5px 30px;
+}
+
+.action-message-align {
+  padding: 5px 15px;
+
+  button {
+    padding-left: 0;
+  }
+
+  .sk-textButton {
+    min-height: 30px;
+    height: inherit;
+    text-align: left;
+    display: block;
+  }
+}
+
+.align-message {
+  width: 243px;
+}
+
+.filter-active {
+  color: $blaze_orange;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $font_1, $font_0;
+  padding: 2px 6px 3px;
+  align-items: flex-start;
+  letter-spacing: .6px;
+}
+
+.file-preview-container {
+  width: 40%;
+}
+
+.file-preview {
+  height: 425px;
+  margin: 0 0 0 85px;
+  border: 1px solid $alto;
+  text-align: center;
+  background-color: $color_whisper_approx;
+
+  .sk-sectionSummary {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  div {
+    margin-top: 90px;
+  }
+
+  img {
+    width: 100%;
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .2s ease-in-out;
+  }
+}
+
+.browse-upload {
+  input[type=file] {
+    position: absolute;
+    left: 9999px;
+  }
+
+  .table-container {
+    width: 60%;
+  }
+}
+
+.created {
+  width: 101px;
+}
+
+.modified-by {
+  width: 200px;
+}
+
+.translation-form-open {
+  border: 1px;
+  border-color: $color_alto_approx;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-input {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+}
+
+.translation-input {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.translation-actions {
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+.temporary-text-area {
+  border: 1px;
+  border-color: $color_alto_approx;
+  border-style: solid;
+}
+
+.tile-closed {
+  display: none;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company-inputs-notes {
+  margin-bottom: 50px;
+}
+
+.company-info-form-open {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info-edit-button-row {
+  padding-top: 10px;
+  justify-content: flex-end;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
+.company-info-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.company-info-column {
+  width: 25%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info-status {
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info-actions {
+  padding: 25px 30px;
+}
+
+.company-info-divider {
+  margin: 30px 0;
+}
+
+.company-info-line-margin {
+  margin: 35px 0;
+}
+
+.company-info-action-buttons {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs-info-actions {
+  margin-top: 25px;
+}
+
+.company-info-comments {
+  margin-top: 17px;
+}
+
+.section-name-spacing {
+  margin-bottom: 30px;
+}
+
+.userInput-form {
+  margin-top: 20px;
+  padding-left: 15px;
+}
+
+.userInput-form-open {
+  border: 1px;
+  border-color: $color_alto_approx;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.userInput-input {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.userInput-actions {
+  padding-top: 25px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+@charset "UTF-8";
+
+.pika-single {
+  z-index: 9999;
+  display: block;
+  position: relative;
+  color: $color_mine_shaft_approx;
+  background: $white;
+  border: 1px solid $color_celeste_approx;
+  border-bottom-color: $color_pink_swan_approx;
+  font-family: $font_2, $font_3, $font_4, $font_0;
+  *zoom: 1;
+
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &.is-bound {
+    position: absolute;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 5px 15px -5px $black_50;
+  }
+}
+
+.pika-lendar {
+  float: left;
+  width: 240px;
+  margin: 8px;
+}
+
+.pika-title {
+  position: relative;
+  text-align: center;
+
+  select {
+    cursor: pointer;
+    position: absolute;
+    z-index: 9998;
+    margin: 0;
+    left: 0;
+    top: 5px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+.pika-label {
+  display: inline-block;
+  *display: inline;
+  position: relative;
+  z-index: 9999;
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 3px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: $white;
+}
+
+.pika-next {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 30px;
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  opacity: .5;
+  *position: absolute;
+  *top: 0;
+  float: right;
+  background-image: url($data_uri_5);
+  *right: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.is-disabled {
+    cursor: default;
+    opacity: .2;
+  }
+}
+
+.pika-prev {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 30px;
+  text-indent: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  opacity: .5;
+  *position: absolute;
+  *top: 0;
+  float: left;
+  background-image: url($data_uri_4);
+  *left: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.is-disabled {
+    cursor: default;
+    opacity: .2;
+  }
+}
+
+.is-rtl {
+  .pika-next {
+    float: left;
+    background-image: url($data_uri_4);
+    *left: 0;
+  }
+
+  .pika-prev {
+    float: right;
+    background-image: url($data_uri_5);
+    *right: 0;
+  }
+}
+
+.pika-select {
+  display: inline-block;
+  *display: inline;
+}
+
+.pika-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+
+  td {
+    width: 14.285714285714286%;
+    padding: 0;
+  }
+
+  th {
+    width: 14.285714285714286%;
+    padding: 0;
+    color: $color_mountain_mist_approx;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  abbr {
+    border-bottom: none;
+    cursor: help;
+  }
+}
+
+.pika-button {
+  cursor: pointer;
+  display: block;
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  padding: 5px;
+  color: $color_storm_dust_approx;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  background: $color_wild_sand_approx;
+
+  &:hover {
+    color: $white;
+    background: $color_flush_orange_approx;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: none;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 3px;
+  }
+}
+
+.pika-week {
+  font-size: 11px;
+  color: $color_mountain_mist_approx;
+}
+
+.is-selection-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.email-button {
+  margin-top: 30px;
+  margin: 20px 0 10px;
+
+  > .sk-bodycopy {
+    margin-left: 10px;
+  }
+}
+
+.jurisdictions-inputs-notes {
+  margin-bottom: 50px;
+}
+
+.hideElement {
+  display: none;
+}
+
+.sub-header {
+  margin-bottom: 10px;
+}
+
+.pagination-and-companys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+  height: 34px;
+}
+
+.company-tile {
+  margin: 10px 0;
+}
+
+.company-tile-content {
+  border: 1px solid $color_mercury_approx;
+  background-color: $color_whisper_approx;
+  justify-content: space-between;
+  padding: 15px 30px;
+  display: flex;
+}
+
+.company-tile-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:first-child {
+    width: 25%;
+    word-wrap: break-word;
+  }
+}
+
+.displayed-date {
+  margin: 40px 0;
+}
+
+.account {
+  width: 60px;
+}
+
+.active-page {
+  color: $blaze_orange;
+  font-size: 13px;
+  margin-right: 6px;
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.table-and-preview {
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.table-spacing {
+  margin: 35px 0 10px;
+}
+
+.browse-label {
+  margin-right: 25px;
+}
+
+.add-cancel {
+  margin-top: 25px;
+}
+
+.selected-file {
+  margin-top: 25px;
+}
+
+.file-count {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.file-input {
+  margin-bottom: 35px;
+}
+
+.buttons {
+  margin-right: 15px;
+}
+
+.top-line-margin {
+  margin-bottom: 35px;
+}
+
+.bottom-line-margin {
+  margin-top: 35px;
+}
+
+.browse-description {
+  font-size: 16px;
+  color: $color_pale_sky_approx;
+  font-weight: 300;
+  letter-spacing: .98px;
+}
+
+.document-page-notes {
+  margin: 0 0 14px;
+}
+
+.document-tile-body {
+  padding: 25px 30px 35px;
+  display: flex;
+}
+
+.document-preview {
+  margin-right: 20px;
+
+  > img {
+    width: 90px;
+    height: 115px;
+  }
+}
+
+.document-approval {
+  width: 100%;
+}
+
+.document-approval-body {
+  margin-bottom: 20px;
+}
+
+.document-subhead {
+  margin-bottom: 10px;
+}
+
+.document-actions {
+  margin-bottom: 30px;
+}
+
+.document-soft-copy {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.document-approval-row {
+  flex-direction: row;
+  display: flex;
+}
+
+.document-tile-subhead {
+  flex-direction: row;
+}
+
+.document-file-name {
+  margin-bottom: 10px;
+}
+
+.file-name-text {
+  margin-left: 20px;
+}
+
+.document-approval-status {
+  margin-right: 30px;
+  width: 240px;
+  flex-direction: column;
+  display: flex;
+}
+
+.document-approval-comments {
+  flex-direction: column;
+  display: flex;
+}
+
+.document-save-cancel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.company-inputs {
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  background-color: $color_whisper_approx;
+  border: 2px solid $color_gray_nurse_approx;
+  display: flex;
+}
+
+.input-links {
+  display: flex;
+}
+
+.country-registrations {
+  margin-top: 35px;
+}
+
+.registration {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.reg-generate-row {
+  display: flex;
+  margin: 30px 0 0 30px;
+  width: 66%;
+
+  > span > span > button > span {
+    width: 131px;
+  }
+}
+
+.reg-text-spacing {
+  margin-left: 30px;
+}
+
+.align-to-button {
+  margin-top: 6px;
+}
+
+.reg-documents {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reg-line-spacing {
+  margin: 30px;
+}
+
+.reg-document-div {
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+.reg-document-preview {
+  margin-right: 20px;
+
+  > img {
+    width: 90px;
+    height: 115px;
+  }
+}
+
+.reg-document-row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.reg-email-button-row {
+  margin-top: 25px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.reg-button-spacing {
+  margin-left: 15px;
+}
+
+.reg-top-line {
+  margin: 0 0 20px;
+}
+
+.reg-bottom-line {
+  margin: 20px 0 0;
+}
+
+.xml-section {
+  width: 66%;
+}
+
+.xml-bottom-line {
+  margin: 20px 0 0 30px;
+}
+
+.reg-div-margin {
+  margin-left: 35px;
+}
+
+.reg-sent-in-date {
+  margin-top: 20px;
+}
+
+.reg-scanned-button-margins {
+  margin: 25px 0;
+}
+
+.reg-record-details-section {
+  margin-top: 35px;
+  margin-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reg-record-reg-upload {
+  margin-left: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.preview-and-buttons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.reg-record-bodycopy {
+  margin-top: 35px;
+}
+
+.reg-input {
+  margin-top: 15px;
+}
+
+.reg-buttons-row {
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.form-table-container {
+  width: 66%;
+}
+
+.form-counter {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.item-counter {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.welcome-container {
+  background-color: $white;
+  margin: 100px auto;
+  width: 400px;
+  height: 400px;
+  color: $color_bombay_approx;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gallery;
+}
+
+.welcome-spacing {
+  margin: 30px 30px 0;
+}
+
+.welcome-input-spacing {
+  margin: 0 30px;
+}
+
+.green.sk-progressbar-NofM_large {
+  color: $color_forest_green_approx;
+}
+
+.grey.sk-progressbar-NofM_large {
+  color: $color_iron_approx;
+}
+
+.content-size.sk-date-picker {
+  position: relative;
+  width: fit-content;
+}
+
+.sk-pagination span .sk-senseiInvertedButton {
+  position: relative;
+  top: 4px;
+  padding: 0 2px;
+}
+
+.sk-toggle:checked + .sk-toggleSlider:before {
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translateX(29px);
+}
+
+.sk-checkbox-icon-enabled svg {
+  margin-right: 10px;
+  background-color: $color_forest_green_approx;
+}
+
+.sk-checkbox-icon-disabled svg {
+  margin-right: 10px;
+  background-color: $color_celeste_approx;
+}
+
+.sk-calendar .pika-lendar {
+  .pika-title {
+    margin-bottom: .75rem;
+
+    .pika-label {
+      font-family: $font_1, $font_0;
+      color: $blaze_orange;
+      overflow: initial;
+    }
+
+    .pika-next {
+      @extend %extend_18;
+      background-image: url($data_uri_2);
+
+      &:hover {
+        background-color: $color_deep_cerulean_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 1.4rem;
+        background-image: url($data_uri_3);
+      }
+    }
+
+    .pika-prev {
+      @extend %extend_18;
+      background-image: url($data_uri_0);
+
+      &:hover {
+        background-color: $color_deep_cerulean_approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 1.4rem;
+        background-image: url($data_uri_1);
+      }
+    }
+  }
+
+  .pika-table {
+    thead {
+      background-color: $color_wild_sand_approx;
+      font-family: $font_1, $font_0;
+
+      tr th {
+        color: $color_pale_sky_approx;
+        border-bottom: .15rem solid $white;
+
+        abbr {
+          text-decoration: none;
+        }
+      }
+    }
+
+    tbody tr {
+      background-color: $color_wild_sand_approx;
+
+      td {
+        border-right: .075rem solid $white;
+
+        .pika-button {
+          color: $color_deep_cerulean_approx;
+          font-weight: 700;
+          font-family: $font_1, $font_0;
+
+          &:hover {
+            color: $white;
+          }
+        }
+
+        &.is-selected > .pika-button {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.download-logout-menu-item span {
+  position: relative;
+  font-size: 15px;
+}
+
+.transfer-link > span {
+  color: $color_deep_cerulean_approx;
+}
+
+.transfer-link-active > span {
+  color: $blaze_orange;
+}
+
+.filter-label > span > .sk-textButton {
+  letter-spacing: 1px;
+}
+
+.company-info-email > .sk-bodycopy {
+  margin-left: 10px;
+}
+
+.is-today .pika-button {
+  color: $color_picton_blue_approx;
+  font-weight: 700;
+}
+
+.has-event .pika-button {
+  color: $white;
+  font-weight: 700;
+  background: $color_picton_blue_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: inset 0 1px 3px $color_curious_blue_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+  background: $color_endeavour_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: inset 0 1px 3px $color_lochmara_approx;
+}
+
+.is-selected .pika-button {
+  color: $white;
+  font-weight: 700;
+  background: $color_picton_blue_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: inset 0 1px 3px $color_curious_blue_approx;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+
+.is-disabled .pika-button {
+  background: $color_link_water_approx;
+  pointer-events: none;
+  cursor: default;
+  color: $color_mountain_mist_approx;
+  opacity: .3;
+}
+
+.is-inrange .pika-button {
+  background: $color_link_water_approx;
+}
+
+.is-startrange .pika-button {
+  color: $white;
+  background: $color_lima_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+
+.is-endrange .pika-button {
+  color: $white;
+  background: $color_picton_blue_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+
+.is-outside-current-month .pika-button {
+  color: $color_mountain_mist_approx;
+  opacity: .3;
+}
+
+.pika-row.pick-whole-week:hover .pika-button {
+  color: $white;
+  background: $color_flush_orange_approx;
+  //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 3px;
+}
+
+label.sk-standardInvertedButton input[type=file] {
+  position: fixed;
+  top: -1000px;
+}
+
+.table-container > div:first-child {
+  overflow-y: auto;
+  max-height: 425px;
+}
+// $color_deep_cerulean_approx

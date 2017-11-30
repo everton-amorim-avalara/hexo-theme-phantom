@@ -1,0 +1,63 @@
+@import 'skylab.scss';
+
+.title{
+    @extend .sk-workspaceTitle;
+    letter-spacing: normal;
+}
+
+h1 {
+    @extend .sk-workspaceTitle;
+    letter-spacing: normal;
+}
+
+h2 {
+    @extend .sk-sectionName;
+    letter-spacing: normal;
+}
+
+h3 {
+    @extend .sk-subsection;
+    letter-spacing: normal;
+}
+
+
+h4 {
+    @extend .sk-subhead;
+    letter-spacing: normal;
+}
+
+h5 h6 {
+    @extend .sk-sectionSummary;
+    letter-spacing: normal;
+}
+
+
+
+p div{
+    @extend .sk-bodycopy;
+    letter-spacing: normal;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+    border-bottom-color: $color_flush_orange_approx;
+    box-shadow: inset 0 -1px 0 0 $color_flush_orange_approx;
+}
+
+
+a:hover {
+    border-bottom-color: transparent;
+    color: $color_flush_orange_approx !important;
+}
+
+#header {
+    padding: 1em 0 0.1em 0;
+}
+
+#footer {
+    padding: 1em 0 2em 0;
+    background-color: #f6f6f6;
+}
+
+#header nav ul li a[href="#menu"]:before{
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'><style>line { stroke-width: 8px; stroke: " + $color_flush_orange_approx + "; }</style><line x1='0' y1='25' x2='100' y2='25' /><line x1='0' y1='50' x2='100' y2='50' /><line x1='0' y1='75' x2='100' y2='75' /></svg>");
+}
